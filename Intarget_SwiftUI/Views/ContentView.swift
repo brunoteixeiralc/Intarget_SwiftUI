@@ -18,8 +18,15 @@ struct ContentView: View {
             BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
+                    .padding(.bottom, alertIsVisible ? 0 : 100)
+                if alertIsVisible {
+                    PointsView(game: $game, alertIsVisible: $alertIsVisible, sliderValue: $sliderValue)
+                }else{
+                    HitButtonView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                }
+            }
+            if !alertIsVisible{
                 SliderView(sliderValue: $sliderValue)
-                HitButtonView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
             }
         }
     }
@@ -75,11 +82,6 @@ struct HitButtonView: View {
         .overlay{
             RoundedRectangle(cornerRadius: 21.0)
                 .strokeBorder(Color.white, lineWidth: 2.0)
-        }
-        .alert(isPresented: $alertIsVisible) {
-            let roundedValue: Int = Int(sliderValue.rounded())
-            return Alert(title: Text("Hello There!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Awesome!!"))
-            )
         }
     }
 }
