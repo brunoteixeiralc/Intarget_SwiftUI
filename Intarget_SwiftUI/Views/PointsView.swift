@@ -20,18 +20,21 @@ struct PointsView: View {
             InstructionText(text: "Your slider value is")
             BigNumberText(text: String(roundedValue))
             BodyText(text: "You scored \(points) points.\n 🎉🎉🎉")
-            Button {
-                alertIsVisible = false
+            Button(action: {
+                withAnimation {
+                    alertIsVisible = false
+                }
                 game.startNewRound(points: points)
-            } label: {
+            })  {
                 ButtonText(text: "Start a new round")
             }
         }
         .padding()
         .frame(maxWidth: 300)
         .background(Color("BackgroundColor"))
-        .cornerRadius(21.0)
+        .cornerRadius(Constants.General.roundRectCornerRadius)
         .shadow(radius: 10.0, x: 5, y: 5)
+        .transition(.scale)
     }
 }
 
