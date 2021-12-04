@@ -59,4 +59,14 @@ class Intarget_SwiftUITests: XCTestCase {
         XCTAssertEqual(game.round, 1)
     }
     
+    func testLeaderBoard(){
+        game.startNewRound(points: 100)
+        XCTAssertEqual(game.leaderboardEntries.count, 1)
+        XCTAssertEqual(game.leaderboardEntries[0].score, 100)
+        game.startNewRound(points: 200)
+        XCTAssertEqual(game.leaderboardEntries.count, 2)
+        XCTAssertEqual(game.leaderboardEntries[0].score, 200)
+        XCTAssertEqual(game.leaderboardEntries[1].score, 100)
+    }
+    
 }

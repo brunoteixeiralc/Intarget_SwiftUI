@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F8270212274C179000AFA7F9 /* Intarget_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intarget_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8270212274C179000AFA7F9 /* InTarget_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTarget_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8270215274C179000AFA7F9 /* Intarget_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intarget_SwiftUIApp.swift; sourceTree = "<group>"; };
 		F8270217274C179000AFA7F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8270219274C179200AFA7F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		F8270213274C179000AFA7F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8270212274C179000AFA7F9 /* Intarget_SwiftUI.app */,
+				F8270212274C179000AFA7F9 /* InTarget_SwiftUI.app */,
 				F8270222274C179200AFA7F9 /* Intarget_SwiftUITests.xctest */,
 			);
 			name = Products;
@@ -159,7 +159,7 @@
 			);
 			name = Intarget_SwiftUI;
 			productName = Intarget_SwiftUI;
-			productReference = F8270212274C179000AFA7F9 /* Intarget_SwiftUI.app */;
+			productReference = F8270212274C179000AFA7F9 /* InTarget_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F8270221274C179200AFA7F9 /* Intarget_SwiftUITests */ = {
@@ -411,7 +411,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.Intarget-SwiftUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InTarget_SwiftUI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,7 +440,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.Intarget-SwiftUI";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InTarget_SwiftUI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
